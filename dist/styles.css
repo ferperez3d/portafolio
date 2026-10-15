@@ -1439,7 +1439,7 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 .is-art-idle .signature-form, .is-art-idle .signature-current { animation-play-state: paused; }
 .hero-layout { position: relative; z-index: 2; display: block; }
 .hero-copy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 8px 100px; padding: 0; isolation: isolate; }
-.hero-copy::before { content: ""; position: absolute; z-index: -1; left: 52%; right: -5%; top: -35px; bottom: -40px; pointer-events: none; background: radial-gradient(ellipse, #080a13f2 15%, #080a13d4 52%, transparent 74%); }
+.hero-copy::before { content: ""; position: absolute; z-index: -1; left: 52%; right: -5%; top: -35px; bottom: -40px; pointer-events: none; background: linear-gradient(90deg, transparent, #080a13ed 14%, #080a13dd 82%, transparent); }
 .hero-role { grid-column: 1; grid-row: 1; max-width: 360px; margin: 0 0 8px; color: #979fc0; font-size: 10px; line-height: 1.7; letter-spacing: .08em; }
 .hero-statement { grid-column: 1; grid-row: 2 / span 2; max-width: none; margin: 0; font-size: clamp(30px, 3.2vw, 46px); line-height: 1.08; letter-spacing: -.055em; font-weight: 400; }
 .hero-statement > span { color: #dad8f5; }
