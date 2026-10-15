@@ -84,7 +84,7 @@ Primera publicación:
 5. Ir a **Actions → Publicar portafolio → Run workflow**, seleccionar `main` y ejecutar. Esto también permite repetir la primera publicación si el flujo se lanzó antes de activar Pages.
 6. Cuando termine correctamente, abrir la dirección que muestra **Settings → Pages** y comprobar portada, casos, imágenes y descarga del CV desde el teléfono.
 
-La dirección del nuevo sitio depende de tu usuario y del repositorio. Más adelante se puede conectar un dominio propio. Una vez conocida la dirección definitiva, actualizar también el enlace del portafolio dentro del PDF del CV.
+La dirección del nuevo sitio depende de tu usuario y del repositorio. Más adelante se puede conectar un dominio propio. El PDF original se conserva sin cambios, incluidas sus anotaciones y enlaces; solo se sustituye o modifica por una nueva indicación de Fernando.
 
 Después de esta configuración inicial, cada cambio guardado en `main` actualiza la web automáticamente. No hay que volver a subir todo el paquete para cambiar un texto, una imagen o el CV.
 
