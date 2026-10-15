@@ -1,0 +1,53 @@
+name: Publicar portafolio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar contenido y archivos
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from urllib.parse import unquote, urlsplit
+
+          root = Path('dist').resolve()
+          with (root / 'content.json').open(encoding='utf-8') as source:
+              content = json.load(source)
+
+          def check(value):
+              if isinstance(value, dict):
+                  for child in value.values():
+                      check(child)
+              elif isinstance(value, list):
+                  for child in value:
+                      check(child)
+              elif isinstance(value, str) and value.startswith('./assets/'):
+                  asset = (root / unquote(urlsplit(value).path)).resolve()
+                  if not asset.is_relative_to(root) or not asset.is_file():
+                      raise SystemExit(f'Archivo local inexistente o fuera del sitio: {value}')
+
+          check(content)
+          print('Contenido válido; los archivos locales están disponibles.')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5
