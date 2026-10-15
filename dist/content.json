@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 3,
+  "language": "es-MX",
+  "publicationStatus": "public",
+  "profile": {
+    "name": "Fernando Pérez",
+    "headline": "Gestión de proyectos y operaciones creativas",
+    "heroTitle": [
+      "Hago avanzar",
+      "proyectos creativos."
+    ],
+    "intro": "Coordino equipos de diseño, programación y contenido para llevar campañas desde el brief hasta su implementación, operación y cierre. Conecto entregables, revisiones con agencias y seguimiento de resultados.",
+    "about": "Mi camino empezó entre la edición de video, la producción audiovisual y los entornos 3D. Hoy trabajo en gestión de proyectos y operaciones creativas en JALO: acompaño campañas comerciales desde sus primeras definiciones hasta la entrega, el seguimiento y el cierre. Soy licenciado en Arte Digital por la Universidad Autónoma del Estado de México y tengo un diplomado en Estudios y Prácticas Curatoriales. Me interesa unir la mirada visual con una forma de trabajar organizada: entender lo que necesita cada proyecto, cuidar la coherencia de sus entregas y ayudar al equipo a llevarlo a cabo.",
+    "capabilities": [
+      {
+        "title": "Gestión de proyectos",
+        "text": "Traducción de requerimientos a briefs, coordinación de equipos y dependencias, seguimiento de entregables y revisiones con agencias y clientes.",
+        "steps": [
+          "Traduzco los requerimientos en briefs y entregables.",
+          "Coordino al equipo de diseño, programación y contenido.",
+          "Doy seguimiento a versiones, dependencias y revisiones con agencias."
+        ]
+      },
+      {
+        "title": "Operaciones creativas",
+        "text": "Organización de producción, configuración de experiencias digitales, documentación de promociones y seguimiento de su operación y cierre.",
+        "steps": [
+          "Configuro experiencias y organizo los materiales de campaña.",
+          "Valido y monitoreo la operación con el equipo técnico.",
+          "Preparo reportes y documentación para el seguimiento y el cierre."
+        ]
+      },
+      {
+        "title": "Procesos y agentes",
+        "text": "Diseño e implementación de flujos que conectan información y herramientas, con criterios de seguimiento, trazabilidad y revisión humana.",
+        "steps": [
+          "Identifico cómo conectar información y herramientas de trabajo.",
+          "Defino criterios para actualizar compromisos y conservar su fuente.",
+          "Dejo las dudas y excepciones visibles para revisión humana."
+        ]
+      }
+    ],
+    "location": "Toluca, Estado de México",
+    "contact": {
+      "email": "ferperez.3d@gmail.com",
+      "linkedin": null
+    }
+  },
+  "projects": [
+    {
+      "slug": "choco-roles-stranger-things",
+      "title": "Choco Roles × Stranger Things",
+      "subtitle": "Coordinación de una experiencia promocional digital",
+      "period": "2025–2026",
+      "organization": "JALO",
+      "role": "Gestión de proyectos y operaciones creativas",
+      "summary": "Coordiné producción, revisiones con agencias y operación de la experiencia de Choco Roles vinculada con Stranger Things. Mi participación incluyó configuración, validaciones y monitoreo diario, reportes semanales y seguimiento del cierre con un reporte final.",
+      "context": "Con la licencia de Stranger Things para la última temporada de la serie, Choco Roles buscaba conectar con su público a través de una experiencia digital. La campaña «El Lado Oscuro de Choco Roles» convirtió esa colaboración en misiones, puntos y premios, y requirió coordinar diseño, contenido, desarrollo y operación.",
+      "contribution": [
+        "Coordiné los equipos de diseño, programación y contenido, y las revisiones con agencias y Netflix.",
+        "Redacté las bases de la promoción y las canalicé a revisión legal.",
+        "Configuré la experiencia en JALO y cargué materiales, imágenes y textos de campaña.",
+        "Realicé validaciones y monitoreo diario de la plataforma.",
+        "Preparé reportes semanales y acompañé el cierre con un reporte final.",
+        "Participé con el equipo de diseño en el rediseño de la pantalla de participación general de JALO, a partir de la propuesta inicial de diseño."
+      ],
+      "decision": "Acompañé las revisiones creativas y de participación para mantener una experiencia clara y coherente en la plataforma.",
+      "delivery": "Mi trabajo abarcó preparación, configuración, validaciones y monitoreo diario, reportes semanales y seguimiento del cierre con un reporte final. La experiencia y sus materiales fueron resultado del trabajo conjunto de diseño, programación, contenido y agencias.",
+      "credits": [
+        "Gestión, redacción de bases para revisión legal, configuración, seguimiento diario y reportes: Fernando Pérez, desde JALO.",
+        "Tarjetas de misiones: equipo de diseño de JALO; coordinación de Fernando Pérez. Programación y contenido: equipos de JALO y colaboradores del proyecto.",
+        "Interfaz de participación general de JALO: propuesta inicial y rediseño en colaboración entre Fernando Pérez y el equipo de diseño de JALO.",
+        "Revisión jurídica: área legal. Revisión y aprobación de materiales de licencia: Netflix."
+      ],
+      "publicReferences": [
+        {
+          "title": "Landing oficial de la campaña",
+          "url": "https://chocoroles.marinela.com.mx/"
+        }
+      ],
+      "media": [
+        {
+          "src": "./assets/chocoroles-mission-purchase.webp",
+          "alt": "Tarjeta de misión Adquiere con empaque Choco Roles edición Stranger Things",
+          "caption": "Tarjeta de misión Adquiere: compra Choco Roles e ingresa el código del empaque.",
+          "credit": "Diseño: equipo de diseño de JALO. Coordinación: Fernando Pérez.",
+          "sourceURL": "https://chocoroles.marinela.com.mx/",
+          "kind": "mission",
+          "background": "./assets/chocoroles-background.webp"
+        },
+        {
+          "src": "./assets/chocoroles-mission-codes.webp",
+          "alt": "Tarjeta de misión Clave oculta con mensaje cifrado de la campaña",
+          "caption": "Tarjeta de misión Clave oculta: descubre los códigos en publicaciones.",
+          "credit": "Diseño: equipo de diseño de JALO. Coordinación: Fernando Pérez.",
+          "sourceURL": "https://chocoroles.marinela.com.mx/",
+          "kind": "mission"
+        }
+      ],
+      "publicResult": {
+        "count": 122074,
+        "label": "misiones completadas",
+        "period": "Total final de campaña",
+        "scope": "Resultado colectivo de la campaña."
+      },
+      "cover": {
+        "src": "./assets/chocoroles-campaign-mark.webp",
+        "alt": "Choco Roles edición limitada Stranger Things, composición original de campaña",
+        "secondarySrc": "./assets/chocoroles-license-mark.webp",
+        "secondaryAlt": "Netflix y Stranger Things, marca de licencia en la campaña de Choco Roles",
+        "background": "./assets/chocoroles-background.webp",
+        "layout": "campaign",
+        "sourceURL": "https://chocoroles.marinela.com.mx/"
+      }
+    },
+    {
+      "slug": "marinela-mundial-2026",
+      "title": "Marinela · Mundial 2026",
+      "subtitle": "Coordinación operativa y seguimiento de una promoción",
+      "period": "2026",
+      "organization": "JALO",
+      "role": "Operaciones de campaña y coordinación técnica",
+      "summary": "Coordiné las bases, el seguimiento técnico, los reportes de participación y los cortes de ganadores de una promoción de Marinela. Conecté desarrollo, legal, marca y agencias durante su operación.",
+      "context": "Los favoritos del Vasco, los favoritos de México fue una promoción de Marinela que invitaba a completar misiones digitales, acumular puntos y participar por premios.",
+      "contribution": [
+        "Gestioné las bases y su revisión con el área legal.",
+        "Coordiné el seguimiento técnico de la experiencia con desarrollo y agencias.",
+        "Preparé reportes de participación y acompañé el seguimiento de resultados.",
+        "Coordiné los cortes y el seguimiento de ganadores con los equipos participantes."
+      ],
+      "decision": "Organicé el seguimiento entre equipos para mantener claras las entregas, las revisiones y las responsabilidades durante la operación.",
+      "delivery": "Mi aportación fue coordinar la preparación y el seguimiento operativo de la experiencia, junto con reportes y cortes de ganadores. El desarrollo, los materiales, las aprobaciones y la gestión de premios correspondieron a los equipos participantes.",
+      "credits": [
+        "Coordinación operativa, seguimiento técnico, reportes y cortes de ganadores: Fernando Pérez, desde JALO.",
+        "Diseño, contenido e implementación: equipos de JALO y colaboradores del proyecto.",
+        "Revisión jurídica y aprobaciones: legal, marca y agencias participantes.",
+        "Contacto de ganadores y gestión de premios: equipos responsables de la promoción."
+      ],
+      "publicReferences": [
+        {
+          "title": "Campaña oficial · Los favoritos del Vasco",
+          "url": "https://marinela.com.mx/losfavoritosdelvasco"
+        },
+        {
+          "title": "Landing pública de la promoción",
+          "url": "https://landings.jalo.live/marinela/losfavoritosdemexico/"
+        }
+      ],
+      "media": [
+        {
+          "src": "./assets/marinela-mundial-keyvisual.webp",
+          "background": "./assets/marinela-mundial-background.webp",
+          "layout": "campaign",
+          "alt": "Identidad pública de Los favoritos del Vasco, los favoritos de México, campaña de Marinela.",
+          "caption": "Identidad de la promoción Los favoritos del Vasco, los favoritos de México.",
+          "credit": "Material público: Marinela y equipo de campaña. Mi función fue la coordinación y operación.",
+          "sourceURL": "https://landings.jalo.live/marinela/losfavoritosdemexico/"
+        }
+      ],
+      "publicResult": {
+        "count": 7407,
+        "label": "misiones completadas",
+        "period": "Total final de campaña",
+        "scope": "Resultado colectivo de la campaña."
+      }
+    },
+    {
+      "slug": "hisense-mundial-2026",
+      "title": "Hisense · Copa Mundial 2026",
+      "subtitle": "Coordinación de tres experiencias y su seguimiento técnico",
+      "period": "2026",
+      "organization": "JALO",
+      "role": "Coordinación creativa, operación y seguimiento técnico",
+      "summary": "Coordiné diseño y desarrollo para la promoción nacional de Hisense y sus variantes de Amazon y Mercado Libre. Organicé entregas, revisiones, seguimiento técnico y reportes semanales.",
+      "context": "Vive la emoción en primera fila fue una promoción de Hisense vinculada con la Copa Mundial de la FIFA 2026. Invitaba a registrar compras, completar misiones y acumular puntos en experiencias digitales.",
+      "contribution": [
+        "Coordiné los materiales con diseño y contenido.",
+        "Organicé las entregas y el seguimiento de la experiencia nacional y sus variantes de Amazon y Mercado Libre.",
+        "Gestioné la canalización de términos y condiciones para revisión y publicación.",
+        "Coordiné el seguimiento técnico con desarrollo y agencias.",
+        "Participé en la preparación y seguimiento de reportes semanales."
+      ],
+      "decision": "Mantuve alineadas las versiones de la campaña y sus entregas en los distintos canales de participación, conectando los equipos creativos, técnicos y de revisión.",
+      "delivery": "La campaña se publicó en el sitio de Hisense con experiencias de participación nacional, Amazon y Mercado Libre. Mi aportación fue coordinar materiales, entregas, revisiones y seguimiento operativo. El diseño, el contenido y la implementación fueron trabajo colectivo.",
+      "credits": [
+        "Coordinación creativa, entregas, seguimiento técnico y reportes: Fernando Pérez, desde JALO.",
+        "Diseño y contenido: equipos creativos de JALO y colaboradores del proyecto.",
+        "Programación e implementación: equipo de desarrollo de JALO.",
+        "Revisión, aprobación y publicación en el sitio de marca: Hisense y agencias participantes."
+      ],
+      "publicReferences": [
+        {
+          "title": "Landing oficial · Vive la emoción en primera fila",
+          "url": "https://hisense.com.mx/CopaMundialdelaFIFA/"
+        }
+      ],
+      "media": [
+        {
+          "src": "./assets/hisense-mundial-keyvisual.webp",
+          "background": "./assets/hisense-mundial-background.webp",
+          "layout": "campaign",
+          "alt": "Marca Hisense y emblema FIFA 2026, patrocinador oficial, publicados en la campaña.",
+          "caption": "Identidad pública de la promoción de Hisense vinculada con la Copa Mundial de la FIFA 2026.",
+          "credit": "Material público: Hisense y equipo de campaña. Mi función fue la coordinación y operación.",
+          "sourceURL": "https://hisense.com.mx/CopaMundialdelaFIFA/"
+        }
+      ],
+      "publicResult": {
+        "count": 4288,
+        "label": "misiones completadas",
+        "period": "Total final de campaña",
+        "scope": "Resultado colectivo de la campaña."
+      }
+    },
+    {
+      "slug": "planet-fitness",
+      "title": "Planet Fitness",
+      "subtitle": "Coordinación de producción y operación en clubes",
+      "period": "2025",
+      "organization": "JALO",
+      "role": "Coordinación creativa y operación de campaña",
+      "summary": "Coordiné briefs, encargos y revisiones para una experiencia promocional de Planet Fitness en JALO. Organicé documentación de producción y entrega, acompañé la validación de participantes y consolidé materiales de cierre con el equipo y el cliente.",
+      "context": "La experiencia Pa’ que te inscribas conectaba misiones digitales con clubes de Planet Fitness. El trabajo combinaba materiales de comunicación, preparación de grabaciones, revisión de la experiencia y logística de premios.",
+      "contribution": [
+        "Traduje el alcance de la campaña a encargos para diseño, adaptaciones, motion y contenido.",
+        "Coordiné la preparación de grabaciones, accesos y documentación de producción.",
+        "Presenté ajustes de la experiencia al cliente y acompañé su validación.",
+        "Organicé itinerarios, formatos y seguimiento de participantes para la entrega de premios.",
+        "Consolidé los reportes y materiales de cierre, con seguimiento de los ajustes solicitados por el cliente."
+      ],
+      "decision": "Acompañé las revisiones para que la comunicación de la campaña y la experiencia de participación fueran claras, desde los materiales hasta la operación en clubes.",
+      "delivery": "Mi aportación fue mantener el alcance claro y coordinar los encargos, revisiones, documentación y entrega final. La experiencia, las piezas y las entregas de premios fueron resultado del trabajo conjunto de JALO, Planet Fitness y los equipos participantes.",
+      "credits": [
+        "Coordinación creativa, documentación y seguimiento operativo: Fernando Pérez, desde JALO.",
+        "Diseño, adaptaciones, motion, contenido, producción y operación de campo: equipos participantes de JALO.",
+        "Revisión de materiales, validaciones y aprobación: Planet Fitness."
+      ],
+      "publicReferences": [
+        {
+          "title": "Experiencia Planet Fitness 2025 en JALO",
+          "url": "https://jalo.live/"
+        }
+      ],
+      "media": [
+        {
+          "src": "./assets/planetfitness-2025.jpg",
+          "alt": "Portada pública de la experiencia Planet Fitness 2025, con participantes y premios.",
+          "caption": "Portada del video enlazado por JALO como Experiencia Planet Fitness, septiembre de 2025.",
+          "credit": "Publicación: JALO · Campaña: Planet Fitness.",
+          "sourceURL": "https://jalo.live/"
+        }
+      ],
+      "publicResult": {
+        "count": 1377,
+        "label": "misiones completadas",
+        "period": "Total final de campaña",
+        "scope": "Resultado colectivo de la campaña."
+      }
+    }
+  ],
+  "trajectory": [
+    {
+      "organization": "JALO",
+      "function": "Gestión de proyectos y operaciones creativas",
+      "formalTitle": "Gestión de proyectos comerciales y coordinación creativa",
+      "start": "2024",
+      "end": null,
+      "current": true,
+      "text": "Coordinación de equipos de diseño, programación y contenido; gestión de entregables y revisiones con agencias; documentación, configuración y seguimiento de promociones; desarrollo de automatizaciones para organizar el trabajo."
+    },
+    {
+      "organization": "GIG Grupo MVS",
+      "function": "Artista 3D: modelado y animación",
+      "formalTitle": null,
+      "start": "2023",
+      "end": "2024",
+      "current": false,
+      "text": "Modelado y animación 3D. Trabajo remoto."
+    },
+    {
+      "organization": "Secretaría de Cultura y Turismo del Estado de México",
+      "function": "Creador de contenido audiovisual",
+      "formalTitle": null,
+      "start": "2021",
+      "end": "2022",
+      "current": false,
+      "text": "Producción de contenido audiovisual en Toluca."
+    },
+    {
+      "organization": "Sistema de Radio y Televisión Mexiquense",
+      "function": "Editor de video",
+      "formalTitle": null,
+      "start": "2018",
+      "end": null,
+      "current": false,
+      "text": "Edición de video en Metepec."
+    }
+  ],
+  "education": [
+    {
+      "qualification": "Licenciatura en Arte Digital",
+      "institution": "Universidad Autónoma del Estado de México",
+      "date": "Agosto 2016 - diciembre 2021"
+    },
+    {
+      "qualification": "Diplomado Superior en Estudios y Prácticas Curatoriales",
+      "institution": "Universidad Autónoma del Estado de México",
+      "date": "Septiembre 2024 - febrero 2025"
+    }
+  ],
+  "cv": {
+    "publicFile": "./assets/Fernando-Perez-CV.pdf",
+    "revision": "20261012-5"
+  },
+  "models3d": [],
+  "portfolio3d": {
+    "title": "Espacios, modelos y experiencias.",
+    "intro": "Una selección de mi trabajo en modelado, visualización y entornos virtuales. Esta práctica creativa complementa mi experiencia actual en gestión y operaciones.",
+    "albumURL": "https://www.artstation.com/ferperez3d/albums/2220796",
+    "works": [
+      {
+        "title": "MAXA CAMP",
+        "category": "Virtualización 3D · Entorno virtual",
+        "description": "Desarrollo de la versión virtual de MAXA CAMP, un campamento que participa en Burning Man. Un espacio que puede recorrerse en Vatom Spaces.",
+        "tools": [
+          "Blender",
+          "Vatom Spaces"
+        ],
+        "credit": "Versión virtual: Fernando Pérez. Proyecto: MAXA CAMP.",
+        "image": {
+          "src": "./assets/3d-maxa.webp",
+          "alt": "Vista del entorno virtual de MAXA CAMP desarrollado por Fernando Pérez"
+        },
+        "sourceURL": "https://www.artstation.com/artwork/rloEGm",
+        "experienceURL": "https://spaces.vatom.com/@maxaverse"
+      },
+      {
+        "title": "Festival Multiverso",
+        "category": "Entorno virtual · Interacción",
+        "description": "Creación de la versión virtual del Festival Multiverso, incorporando elementos interactivos y de jugabilidad en Hyperfy.",
+        "tools": [
+          "Blender",
+          "Hyperfy"
+        ],
+        "credit": "Versión virtual: Fernando Pérez. Proyecto: Festival Multiverso.",
+        "image": {
+          "src": "./assets/3d-multiverso.webp",
+          "alt": "Escenario y espacios de la versión virtual del Festival Multiverso"
+        },
+        "sourceURL": "https://www.artstation.com/artwork/DLrAWy",
+        "experienceURL": "https://hyperfy.io/multiverso/~T9Ez"
+      },
+      {
+        "title": "Del Bosque · Propuesta de montaje",
+        "category": "Visualización arquitectónica · Exposición",
+        "description": "Modelado de Del Bosque Restaurante, en Chapultepec, y propuesta de montaje para una exposición de arte digital.",
+        "tools": [
+          "Blender"
+        ],
+        "credit": "Modelado y propuesta de montaje: Fernando Pérez. Las obras mostradas conservan la autoría de sus artistas.",
+        "image": {
+          "src": "./assets/3d-del-bosque.webp",
+          "alt": "Render de la propuesta de exposición digital en Del Bosque Restaurante"
+        },
+        "sourceURL": "https://www.artstation.com/artwork/AZAwL5"
+      },
+      {
+        "title": "Palacio Municipal · El Oro",
+        "category": "Modelado arquitectónico",
+        "description": "Modelado 3D del Palacio Municipal de El Oro de Hidalgo, Estado de México. La publicación muestra vistas del modelo y su proceso de creación.",
+        "tools": [
+          "Blender"
+        ],
+        "credit": "Modelado 3D: Fernando Pérez.",
+        "image": {
+          "src": "./assets/3d-palacio.jpg",
+          "alt": "Modelo 3D del Palacio Municipal de El Oro de Hidalgo"
+        },
+        "sourceURL": "https://www.artstation.com/artwork/39qBOm"
+      }
+    ]
+  },
+  "automations": []
+}
