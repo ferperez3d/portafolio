@@ -25,7 +25,7 @@ Las campañas se ordenan automáticamente de mayor a menor número de misiones c
 
 Para cambiar una imagen, subir primero su archivo a `dist/assets/` y después actualizar su ruta en `content.json`, por ejemplo `./assets/nueva-imagen.webp`. Mantener el texto alternativo, la fuente y el crédito correspondientes.
 
-Para sustituir el CV, subir el nuevo PDF a `dist/assets/Fernando-Perez-CV.pdf` y cambiar `cv.revision` a un identificador nuevo, por ejemplo `20261015-1`. Esto renueva el enlace de descarga y evita que el navegador siga entregando el PDF anterior. Cambiar ese número no modifica el contenido del PDF.
+El CV descargable conserva exactamente el PDF original compartido por Fernando; no se regenera a partir de los textos de la web. Para sustituir el CV, subir el nuevo PDF a `dist/assets/Fernando-Perez-CV.pdf` y cambiar `cv.revision` a un identificador nuevo, por ejemplo `20261015-1`. Esto renueva el enlace de descarga y evita que el navegador siga entregando el PDF anterior. Cambiar ese número no modifica el contenido del PDF.
 
 Antes de publicar, el flujo comprueba que el JSON sea válido y que existan los archivos locales que menciona. Si falla, la publicación se detiene y la web anterior continúa disponible. El detalle del error aparece en la pestaña Actions. Para recuperar un contenido anterior, se puede revertir su commit y volver a publicar.
 
@@ -37,9 +37,9 @@ Las secciones sin contenido, como contacto y modelos 3D, se omiten en la web. El
 
 La identidad visual parte de los gustos de Fernando y de la iluminación de sus obras personales: fondo oscuro, luz azul y violeta, bordes luminosos y capas. Su nombre ocupa la primera jerarquía; las campañas presentan su trabajo principal y el 3D aparece después de la trayectoria.
 
-Las campañas se presentan primero en lista para facilitar un vistazo rápido; la galería queda como segunda opción. «Cómo trabajo» resume tres áreas de práctica. Las obras 3D se filtran por entornos virtuales y visualización. Cada imagen puede ampliarse en una galería con navegación, acercamiento y créditos. Los casos tienen accesos a sus apartados disponibles.
+Las campañas se presentan primero en una lista visual compacta, con miniatura, título y resultado; la galería queda como segunda opción. «Cómo trabajo» resume tres áreas de práctica. Las obras 3D se filtran por entornos virtuales y visualización. Cada imagen puede ampliarse en una galería con navegación, acercamiento y créditos. Los casos tienen accesos a sus apartados disponibles.
 
-El fondo de la portada se mantiene estático y la luz responde suavemente al puntero. La preferencia del sistema de movimiento reducido se respeta automáticamente. Los controles funcionan con teclado y la galería devuelve el foco al botón de origen al cerrarse.
+La portada incorpora una firma de luz original basada en las iniciales FP: una cinta azul y violeta con profundidad, respuesta suave al puntero y al desplazamiento, y un recorrido de luz. En móvil no captura gestos. La animación se detiene fuera de pantalla y respeta la preferencia del sistema de movimiento reducido. Los controles funcionan con teclado y la galería devuelve el foco al botón de origen al cerrarse.
 
 Los textos de «Cómo trabajo» se editan en `profile.capabilities`. Cada área contiene `title` y `text`, sin una lista adicional de pasos. Mantener las explicaciones generales y omitir datos internos y resultados que no se hayan medido.
 
@@ -105,3 +105,7 @@ Servir la carpeta `dist` con un servidor HTTP local. El archivo JSON se obtiene 
 - `.github/workflows/pages.yml`: publicación en GitHub Pages.
 
 Documentación del visor: [model-viewer](https://modelviewer.dev/).
+
+## Tipografía
+
+Space Grotesk se aloja localmente en `dist/assets/space-grotesk.woff2`; incluye los caracteres latinos y españoles. Su licencia SIL Open Font License 1.1 se conserva en `dist/assets/space-grotesk-OFL.txt`. Fuente: [Google Fonts](https://github.com/google/fonts/tree/main/ofl/spacegrotesk). La firma FP es una composición vectorial original de esta web, independiente de las obras 3D del portafolio.
