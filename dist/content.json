@@ -9,35 +9,20 @@
       "Hago avanzar",
       "proyectos creativos."
     ],
-    "intro": "Coordino equipos de diseño, programación y contenido para llevar campañas desde el brief hasta su implementación, operación y cierre. Conecto entregables, revisiones con agencias y seguimiento de resultados.",
-    "about": "Mi camino empezó entre la edición de video, la producción audiovisual y los entornos 3D. Hoy trabajo en gestión de proyectos y operaciones creativas en JALO: acompaño campañas comerciales desde sus primeras definiciones hasta la entrega, el seguimiento y el cierre. Soy licenciado en Arte Digital por la Universidad Autónoma del Estado de México y tengo un diplomado en Estudios y Prácticas Curatoriales. Me interesa unir la mirada visual con una forma de trabajar organizada: entender lo que necesita cada proyecto, cuidar la coherencia de sus entregas y ayudar al equipo a llevarlo a cabo.",
+    "intro": "Coordino equipos de diseño, programación y contenido para llevar campañas del brief al cierre, con seguimiento de entregables y revisiones con agencias.",
+    "about": "Soy licenciado en Arte Digital por la Universidad Autónoma del Estado de México y tengo un diplomado en Estudios y Prácticas Curatoriales. Comencé en edición de video, producción audiovisual y entornos 3D. Esa experiencia visual acompaña hoy mi trabajo en gestión y operaciones creativas en JALO: entender lo que necesita cada proyecto, organizar sus entregas y ayudar al equipo a llevarlo a cabo.",
     "capabilities": [
       {
         "title": "Gestión de proyectos",
-        "text": "Traducción de requerimientos a briefs, coordinación de equipos y dependencias, seguimiento de entregables y revisiones con agencias y clientes.",
-        "steps": [
-          "Traduzco los requerimientos en briefs y entregables.",
-          "Coordino al equipo de diseño, programación y contenido.",
-          "Doy seguimiento a versiones, dependencias y revisiones con agencias."
-        ]
+        "text": "Convierto los requerimientos en briefs y entregables, coordino al equipo y doy seguimiento a dependencias y revisiones con agencias y clientes."
       },
       {
         "title": "Operaciones creativas",
-        "text": "Organización de producción, configuración de experiencias digitales, documentación de promociones y seguimiento de su operación y cierre.",
-        "steps": [
-          "Configuro experiencias y organizo los materiales de campaña.",
-          "Valido y monitoreo la operación con el equipo técnico.",
-          "Preparo reportes y documentación para el seguimiento y el cierre."
-        ]
+        "text": "Configuro experiencias digitales, organizo la documentación de las promociones y coordino validaciones, monitoreo y reportes durante la operación."
       },
       {
         "title": "Procesos y agentes",
-        "text": "Diseño e implementación de flujos que conectan información y herramientas, con criterios de seguimiento, trazabilidad y revisión humana.",
-        "steps": [
-          "Identifico cómo conectar información y herramientas de trabajo.",
-          "Defino criterios para actualizar compromisos y conservar su fuente.",
-          "Dejo las dudas y excepciones visibles para revisión humana."
-        ]
+        "text": "Diseño flujos con IA que conectan herramientas, actualizan el seguimiento del trabajo y conservan fuentes y dudas para revisión humana."
       }
     ],
     "location": "Toluca, Estado de México",
@@ -64,8 +49,6 @@
         "Preparé reportes semanales y acompañé el cierre con un reporte final.",
         "Participé con el equipo de diseño en el rediseño de la pantalla de participación general de JALO, a partir de la propuesta inicial de diseño."
       ],
-      "decision": "Acompañé las revisiones creativas y de participación para mantener una experiencia clara y coherente en la plataforma.",
-      "delivery": "Mi trabajo abarcó preparación, configuración, validaciones y monitoreo diario, reportes semanales y seguimiento del cierre con un reporte final. La experiencia y sus materiales fueron resultado del trabajo conjunto de diseño, programación, contenido y agencias.",
       "credits": [
         "Gestión, redacción de bases para revisión legal, configuración, seguimiento diario y reportes: Fernando Pérez, desde JALO.",
         "Tarjetas de misiones: equipo de diseño de JALO; coordinación de Fernando Pérez. Programación y contenido: equipos de JALO y colaboradores del proyecto.",
@@ -128,8 +111,6 @@
         "Preparé reportes de participación y acompañé el seguimiento de resultados.",
         "Coordiné los cortes y el seguimiento de ganadores con los equipos participantes."
       ],
-      "decision": "Organicé el seguimiento entre equipos para mantener claras las entregas, las revisiones y las responsabilidades durante la operación.",
-      "delivery": "Mi aportación fue coordinar la preparación y el seguimiento operativo de la experiencia, junto con reportes y cortes de ganadores. El desarrollo, los materiales, las aprobaciones y la gestión de premios correspondieron a los equipos participantes.",
       "credits": [
         "Coordinación operativa, seguimiento técnico, reportes y cortes de ganadores: Fernando Pérez, desde JALO.",
         "Diseño, contenido e implementación: equipos de JALO y colaboradores del proyecto.",
@@ -180,8 +161,7 @@
         "Coordiné el seguimiento técnico con desarrollo y agencias.",
         "Participé en la preparación y seguimiento de reportes semanales."
       ],
-      "decision": "Mantuve alineadas las versiones de la campaña y sus entregas en los distintos canales de participación, conectando los equipos creativos, técnicos y de revisión.",
-      "delivery": "La campaña se publicó en el sitio de Hisense con experiencias de participación nacional, Amazon y Mercado Libre. Mi aportación fue coordinar materiales, entregas, revisiones y seguimiento operativo. El diseño, el contenido y la implementación fueron trabajo colectivo.",
+      "delivery": "Se publicaron la experiencia nacional y las variantes de Amazon y Mercado Libre en el sitio de Hisense.",
       "credits": [
         "Coordinación creativa, entregas, seguimiento técnico y reportes: Fernando Pérez, desde JALO.",
         "Diseño y contenido: equipos creativos de JALO y colaboradores del proyecto.",
@@ -228,8 +208,6 @@
         "Organicé itinerarios, formatos y seguimiento de participantes para la entrega de premios.",
         "Consolidé los reportes y materiales de cierre, con seguimiento de los ajustes solicitados por el cliente."
       ],
-      "decision": "Acompañé las revisiones para que la comunicación de la campaña y la experiencia de participación fueran claras, desde los materiales hasta la operación en clubes.",
-      "delivery": "Mi aportación fue mantener el alcance claro y coordinar los encargos, revisiones, documentación y entrega final. La experiencia, las piezas y las entregas de premios fueron resultado del trabajo conjunto de JALO, Planet Fitness y los equipos participantes.",
       "credits": [
         "Coordinación creativa, documentación y seguimiento operativo: Fernando Pérez, desde JALO.",
         "Diseño, adaptaciones, motion, contenido, producción y operación de campo: equipos participantes de JALO.",

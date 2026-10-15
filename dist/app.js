@@ -32,7 +32,7 @@ const externalLink = (title, href) => {
 
 let projects = [];
 let artwork = [];
-let projectLayout = 'gallery';
+let projectLayout = 'list';
 let artworkFilter = 'all';
 let lastTrigger = null;
 let projectReturnHash = '#proyectos';
@@ -102,6 +102,7 @@ function conceptGraphic(index) {
 
 function renderProjects() {
   const list = byId('project-list');
+  list.classList.toggle('is-list', projectLayout === 'list');
   list.replaceChildren();
   projects.forEach((project, index) => {
     const card = el('article', `project-card project-card--${index + 1} project-card--${project.slug}`);
@@ -239,9 +240,16 @@ function openProject(project, trigger = null, updateHash = true) {
     const src = assetURL(media.src);
     if (!src) continue;
     const figure = el('figure', 'detail-media');
+    const frame = el('div', 'detail-media-artwork');
+    const backdrop = assetURL(media.background);
+    if (backdrop) {
+      frame.classList.add('detail-media-artwork--campaign');
+      frame.style.backgroundImage = `url("${backdrop}")`;
+    }
     const img = el('img');
     img.src = src; img.alt = media.alt || project.title; img.loading = 'lazy';
-    figure.append(img);
+    frame.append(img);
+    figure.append(frame);
     const caption = [media.caption, media.credit].filter(Boolean).join(' · ');
     if (caption) figure.append(el('figcaption', null, caption));
     if (media.sourceURL) {
@@ -331,23 +339,9 @@ function renderProfile(content) {
   byId('about-text').textContent = profile.about;
   const capabilityList = byId('capability-list');
   capabilityList.replaceChildren();
-  profile.capabilities.forEach((item, index) => {
+  profile.capabilities.forEach((item) => {
     const capability = el('article', 'capability');
     capability.append(el('h3', null, item.title), el('p', null, item.text));
-    if (item.steps?.length) {
-      const steps = el('ol', 'capability-steps');
-      steps.id = `capability-steps-${index + 1}`; steps.hidden = true;
-      item.steps.forEach((step) => steps.append(el('li', null, step)));
-      const toggle = el('button', 'capability-toggle', 'Ver cómo lo aplico +');
-      toggle.type = 'button'; toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-controls', steps.id);
-      toggle.addEventListener('click', () => {
-        steps.hidden = !steps.hidden;
-        toggle.setAttribute('aria-expanded', String(!steps.hidden));
-        toggle.textContent = steps.hidden ? 'Ver cómo lo aplico +' : 'Cerrar recorrido −';
-      });
-      capability.append(toggle, steps);
-    }
     capabilityList.append(capability);
   });
   const timeline = byId('timeline');
@@ -604,11 +598,8 @@ function setupInteractions() {
 
 function setupAtmosphere() {
   const hero = byId('inicio');
-  const toggle = byId('motion-toggle');
-  if (!hero || !toggle) return;
+  if (!hero) return;
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = false;
-  try { paused = localStorage.getItem('fernando-motion') === 'paused'; } catch { /* Preferences are optional. */ }
   let lightFrame = null;
   let lightX = 0;
   let lightY = 0;
@@ -619,21 +610,13 @@ function setupAtmosphere() {
     hero.style.setProperty('--light-y', '0px');
   };
   const applyPreference = () => {
-    const stopped = paused || preference.matches;
+    const stopped = preference.matches;
     document.documentElement.classList.toggle('motion-paused', stopped);
-    toggle.setAttribute('aria-pressed', String(!stopped));
-    toggle.disabled = preference.matches;
-    toggle.textContent = preference.matches ? 'Movimiento reducido' : paused ? 'Activar movimiento' : 'Pausar movimiento';
     if (stopped) resetLight();
   };
-  toggle.addEventListener('click', () => {
-    paused = !paused;
-    try { localStorage.setItem('fernando-motion', paused ? 'paused' : 'active'); } catch { /* Keep the choice for this page. */ }
-    applyPreference();
-  });
   preference.addEventListener('change', applyPreference);
   hero.addEventListener('pointermove', (event) => {
-    if (paused || preference.matches || event.pointerType !== 'mouse') return;
+    if (preference.matches || event.pointerType !== 'mouse') return;
     const bounds = hero.getBoundingClientRect();
     lightX = Math.max(-18, Math.min(18, ((event.clientX - bounds.left) / bounds.width - 0.5) * 36));
     lightY = Math.max(-14, Math.min(14, ((event.clientY - bounds.top) / bounds.height - 0.5) * 28));
