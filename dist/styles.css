@@ -1392,8 +1392,8 @@ main > .is-section-current::before { opacity: 1; }
 /* Light follows the pointer; the background itself stays still. */
 .field-line, .atmosphere-glow, .light-plane { animation: none; }
 @media (max-width: 650px) {
-  .detail-media-artwork--campaign { min-height: 230px; aspect-ratio: 4 / 3; padding: 24px; }
-  .project-detail .detail-media-artwork--campaign img { max-height: 300px; }
+  .detail-media-artwork--campaign { display: block; min-height: 0; aspect-ratio: auto; padding: 16px; }
+  .project-detail .detail-media-artwork--campaign img { display: block; width: 100%; height: auto; min-width: 0; max-width: 100%; max-height: none; }
 }
 
 /* Fernando Pérez — a personal signature of light and connected planes. */
@@ -1404,7 +1404,7 @@ main > .is-section-current::before { opacity: 1; }
   font-weight: 300 700;
   font-display: swap;
 }
-:root { --blue: #638dff; --violet: #ad7dff; --paper: #080a13; --ink: #f0effb; --muted: #a3acc5; font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; }
+:root { --blue: #6f9bff; --violet: #bd8cff; --paper: #080a13; --ink: #f0effb; --muted: #a3acc5; font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; }
 body { background: #080a13; }
 h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; }
 ::selection { color: #fff; background: #754cc4; }
@@ -1418,10 +1418,10 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 .hero.wrap {
   min-height: 710px;
   padding-block: 52px 62px;
-  background: radial-gradient(ellipse at 75% 30%, #22143d66, transparent 54%), #080a13;
+  background: radial-gradient(ellipse at 75% 30%, #35205b80, transparent 54%), #080a13;
   border-bottom: 1px solid #52487e40;
 }
-.hero-ambient { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 78% 20%, #7041c52b, transparent 45%), radial-gradient(ellipse at 60% 100%, #3155bc28, transparent 43%); }
+.hero-ambient { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 78% 20%, #8b4aff40, transparent 45%), radial-gradient(ellipse at 60% 100%, #356dff3b, transparent 43%); }
 .hero-identity { position: relative; z-index: 2; display: block; width: 66%; margin: 0 0 46px; }
 .identity-caption { padding: 0; margin: 0 0 28px; color: #acb0cb; font-size: 10px; line-height: 1.7; letter-spacing: .045em; }
 .identity-caption > span { margin-inline: 14px; color: #ad7dff; }
@@ -1432,7 +1432,7 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 .hero-sculpture { position: absolute; z-index: 1; width: min(62vw, 860px); height: min(62vw, 860px); top: -55px; right: -2%; pointer-events: none; transform: perspective(900px) translate3d(var(--light-x, 0px), calc(var(--light-y, 0px) + var(--hero-shift, 0px)), 0) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)); opacity: calc(1 - var(--hero-progress, 0) * .35); transition: transform 600ms cubic-bezier(.16,1,.3,1), opacity 350ms; }
 .light-signature { width: 100%; height: 100%; overflow: visible; }
 .signature-form { transform-origin: 50% 50%; animation: signature-drift 12s ease-in-out infinite alternate; }
-.signature-ribbons { filter: drop-shadow(0 0 5px #6c6dff4d); }
+.signature-ribbons { filter: drop-shadow(0 0 7px #8074ff70); }
 .signature-current { stroke-dasharray: 70 930; animation: signature-flow 13s linear infinite; }
 @keyframes signature-drift { from { transform: translateY(5px) rotate(-12deg); } to { transform: translateY(-9px) rotate(-7deg); } }
 @keyframes signature-flow { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
@@ -1446,7 +1446,7 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 .hero-intro { grid-column: 2; grid-row: 1 / span 2; max-width: 43ch; margin: 0; padding: 0; color: #b2bad0; font-size: 15px; line-height: 1.8; }
 .hero-actions { grid-column: 2; grid-row: 3; gap: 26px; margin-top: 18px; }
 .hero-link { font-size: 12px; gap: 18px; }
-.hero-link > span { width: 48px; height: 48px; border-radius: 50%; border-color: #8d79ba; background: #4c377a38; color: #ddd1ff; }
+.hero-link > span { width: 48px; height: 48px; border-radius: 50%; border-color: #aa8be2; background: #643e9e48; color: #eadfff; }
 .hero .text-link { color: #c0c3df; font-size: 12px; }
 
 .section-space { padding-block: clamp(76px, 7vw, 110px); }
@@ -1455,14 +1455,14 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 .section-heading .eyebrow { margin-bottom: 24px; font-size: 10px; color: #aaa5c2; letter-spacing: .09em; }
 .section-index { border: 0; color: #b58aff; background: none; font-family: "Space Grotesk", sans-serif; }
 .is-section-current .section-index { background: none; box-shadow: none; color: #dbbaff; }
-main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter); right: auto; opacity: .5; background: linear-gradient(90deg, #8b67f2, #447bff55, transparent); box-shadow: 0 0 24px #8063ee3b; }
-.projects-section.wrap { background: radial-gradient(ellipse at 100% 5%, #3724661f, transparent 48%), #080a13; }
+main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter); right: auto; opacity: .75; background: linear-gradient(90deg, #aa73ff, #4e8bff80, transparent); box-shadow: 0 0 28px #9569ff66; }
+.projects-section.wrap { background: radial-gradient(ellipse at 100% 5%, #6137b033, transparent 48%), radial-gradient(ellipse at 0% 95%, #244fb91c, transparent 50%), #080a13; }
 .projects-section .section-heading { margin-bottom: 30px; }
 .projects-section .section-note { max-width: 290px; font-size: 14px; line-height: 1.8; }
 .project-browser-heading { border: 0; padding: 0; margin-bottom: 18px; }
 .project-layout-switch { border: 0; padding: 0; gap: 5px; background: none; }
 .project-layout-switch button { min-height: 44px; padding: 8px 17px; border: 1px solid #3c405b; border-radius: 30px; color: #a5afc8; background: transparent; font-size: 11px; }
-.project-layout-switch button[aria-pressed="true"] { background: #7454b32e; border-color: #a28aca; color: #f1eaff; box-shadow: none; }
+.project-layout-switch button[aria-pressed="true"] { background: #8050ce40; border-color: #b28be8; color: #f1eaff; box-shadow: 0 0 18px #8654dc16; }
 .project-card { position: relative; border-color: #323348; }
 .project-index { display: none; }
 #project-list.is-list { gap: 0; }
@@ -1492,20 +1492,20 @@ main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter
 #project-list.is-list .visual-caption, #project-list.is-list .exploration-frame { display: none; }
 #project-list.is-list .project-visual-open::after { display: none; }
 #project-list:not(.is-list) .project-title { font-family: "Space Grotesk", sans-serif; font-weight: 400; letter-spacing: -.05em; }
-.capabilities-section { background: radial-gradient(ellipse at 100% 90%, #44247436, transparent 70%), #101022; }
+.capabilities-section { background: radial-gradient(ellipse at 100% 90%, #6834ba47, transparent 70%), #101022; }
 .capability, .capability:nth-child(2), .capability:nth-child(3) { border-color: #72658d; }
 .capability::before { color: #aa8ace; }
 .capability h3 { font-size: clamp(23px, 2.3vw, 32px); line-height: 1.15; font-weight: 400; letter-spacing: -.05em; }
 .capability p { color: #b4b7cd; font-size: 15px; }
-.trajectory-section.wrap { background: radial-gradient(ellipse at 5% 35%, #14265060, transparent 60%), #080a13; }
+.trajectory-section.wrap { background: radial-gradient(ellipse at 5% 35%, #1d3b8280, transparent 60%), #080a13; }
 .trajectory-layout { gap: clamp(52px, 8vw, 120px); }
 .about-text { color: #dedcf0; font-size: clamp(21px, 2vw, 29px); line-height: 1.6; letter-spacing: -.025em; }
 .timeline-entry { border-left-color: #655383; }
 .timeline-entry h3, .education-entry h3 { font-size: 23px; font-weight: 400; letter-spacing: -.035em; }
-.three-d-section { background: linear-gradient(145deg, #14102b, #080a13 70%); }
+.three-d-section { background: linear-gradient(145deg, #211542, #080a13 70%); }
 .three-d-image { border-radius: 4px; }
 .three-d-work-title { font-weight: 400; letter-spacing: -.045em; }
-.contact-section { background: radial-gradient(ellipse at 80% 100%, #5731835c, transparent 65%), #111022; border-color: #66517f; }
+.contact-section { background: radial-gradient(ellipse at 80% 100%, #8043c473, transparent 65%), #111022; border-color: #8060a6; }
 .contact-layout h2 { font-size: clamp(66px, 8vw, 116px); line-height: .95; font-weight: 400; letter-spacing: -.075em; }
 .contact-link { color: #d1befa; }
 .site-footer { background: #080a13; color: #969bb7; }
