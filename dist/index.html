@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080b16" />
+    <meta name="description" content="Fernando Pérez. Gestión de proyectos y operaciones creativas: coordinación de equipos, producción, validación y seguimiento de campañas comerciales." />
+    <title>Fernando Pérez — Proyectos y operaciones creativas</title>
+    <link rel="stylesheet" href="./styles.css?v=compact-buttons-20261012-10" />
+    <script type="module" src="./app.js?v=compact-buttons-20261012-10"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header wrap">
+      <a class="wordmark" href="#inicio" aria-label="Fernando Pérez, inicio"><span>Fernando</span><span>Pérez<span class="wordmark-dot" aria-hidden="true">.</span></span></a>
+      <nav id="primary-navigation" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a id="approach-nav" href="#enfoque">Cómo trabajo</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a id="three-d-nav" href="#trabajo-3d" hidden>3D</a>
+        <a id="contact-nav" class="nav-contact" href="#contact-section" hidden>Contacto <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <section id="inicio" class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <svg class="light-field" viewBox="0 0 1200 760" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="field-light" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#467dff"/><stop offset=".6" stop-color="#b286ff"/><stop offset="1" stop-color="#7044f0" stop-opacity="0"/></linearGradient></defs>
+            <g fill="none" stroke="url(#field-light)">
+              <path class="field-line field-line--one" d="M-120 740C190 605 318 325 692 285s447-143 598-303"/>
+              <path class="field-line field-line--two" d="M-80 760C252 643 355 384 733 350s376-190 592-259"/>
+              <path class="field-line field-line--three" d="M-160 725C135 469 416 214 751 223s361-31 520-163"/>
+            </g>
+          </svg>
+          <span class="atmosphere-glow atmosphere-glow--blue"></span>
+          <span class="atmosphere-glow atmosphere-glow--violet"></span>
+          <div class="light-planes"><span class="light-plane light-plane--blue"></span><span class="light-plane light-plane--violet"></span></div>
+        </div>
+        <div class="hero-identity">
+          <h1 id="profile-name" class="hero-name">Fernando Pérez</h1>
+          <div class="hero-personal-meta">
+            <p class="identity-caption"><span class="status-mark" aria-hidden="true"></span>Portafolio personal</p>
+            <button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="true">Pausar movimiento</button>
+          </div>
+        </div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p id="profile-headline" class="hero-role">Gestión de proyectos y operaciones creativas</p>
+            <h2 id="hero-title" class="hero-statement">Hago avanzar<br /><span>proyectos creativos.</span></h2>
+            <p id="profile-intro" class="hero-intro">Coordino equipos de diseño, programación y contenido para llevar campañas desde el brief hasta su implementación, operación y cierre. Conecto entregables, revisiones con agencias y seguimiento de resultados.</p>
+            <div class="hero-actions">
+              <a class="hero-link" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
+              <a id="cv-link" class="text-link" hidden>Descargar CV <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+        </div>
+        <ul class="work-tags" aria-label="Áreas de experiencia"><li>Coordinación creativa</li><li>Operación de campañas</li><li>Validación y monitoreo</li><li>Reportes y seguimiento</li></ul>
+      </section>
+
+      <section id="proyectos" class="projects-section section-space wrap" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index" aria-hidden="true">01</span>Casos destacados</p>
+            <h2 id="projects-title">Mi participación,<br />caso por caso.</h2>
+          </div>
+          <p class="section-note">Una selección de campañas en las que he participado, destacadas por sus resultados. Mi experiencia incluye más proyectos; aquí comparto algunos casos y mi aportación en cada uno.</p>
+        </div>
+        <div class="project-browser-heading">
+          <span class="project-browser-label">De mayor a menor número de misiones completadas</span>
+          <div id="project-layout-switch" class="project-layout-switch" role="group" aria-label="Visualización de campañas">
+            <button type="button" data-project-layout="gallery" aria-pressed="true"><span aria-hidden="true">▦</span>Galería</button>
+            <button type="button" data-project-layout="list" aria-pressed="false"><span aria-hidden="true">☷</span>Lista</button>
+          </div>
+        </div>
+        <div id="project-list" class="project-grid"></div>
+        <noscript><p class="section-note">Activa JavaScript para explorar los proyectos y sus detalles.</p></noscript>
+      </section>
+
+      <section id="enfoque" class="capabilities-section section-space" aria-labelledby="capabilities-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="section-index" aria-hidden="true">02</span>Cómo trabajo</p>
+              <h2 id="capabilities-title">Así acompaño<br />cada proyecto.</h2>
+            </div>
+          </div>
+          <div id="capability-list" class="capability-grid"></div>
+        </div>
+      </section>
+
+
+
+      <section id="trayectoria" class="trajectory-section section-space wrap" aria-labelledby="trajectory-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index" aria-hidden="true">03</span>Sobre mí</p>
+            <h2 id="trajectory-title">Una base creativa.<br />Una mirada operativa.</h2>
+          </div>
+        </div>
+        <div class="trajectory-layout">
+          <div class="about-column">
+            <p id="about-text" class="about-text">Mi camino empezó entre la edición de video, la producción audiovisual y los entornos 3D. Hoy trabajo en gestión de proyectos y operaciones creativas en JALO: acompaño campañas comerciales desde sus primeras definiciones hasta la entrega, el seguimiento y el cierre. Soy licenciado en Arte Digital por la Universidad Autónoma del Estado de México y tengo un diplomado en Estudios y Prácticas Curatoriales. Me interesa unir la mirada visual con una forma de trabajar organizada: entender lo que necesita cada proyecto, cuidar la coherencia de sus entregas y ayudar al equipo a llevarlo a cabo.</p>
+          </div>
+          <div class="experience-column">
+            <h3 class="column-label">Experiencia</h3>
+            <div id="timeline" class="timeline"></div>
+            <h3 class="column-label education-label">Formación</h3>
+            <div id="education" class="education-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trabajo-3d" class="three-d-section section-space" hidden aria-labelledby="three-d-title">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="section-index" aria-hidden="true">04</span>Producción 3D y espacios virtuales</p>
+              <h2 id="three-d-title">Espacios, modelos<br />y experiencias.</h2>
+            </div>
+            <div class="three-d-introduction">
+              <p id="three-d-intro" class="section-note"></p>
+              <a id="three-d-album" class="text-link" hidden>Ver portafolio 3D en ArtStation ↗</a>
+            </div>
+          </div>
+          <div id="three-d-filters" class="collection-filters collection-filters--dark" role="group" aria-label="Filtrar proyectos 3D">
+            <button type="button" data-three-d-filter="all" aria-pressed="true">Todo</button>
+            <button type="button" data-three-d-filter="virtual" aria-pressed="false">Entornos virtuales</button>
+            <button type="button" data-three-d-filter="visualization" aria-pressed="false">Visualización</button>
+            <span class="collection-hint">Abre las imágenes para ver los detalles <span aria-hidden="true">↙</span></span>
+          </div>
+          <div id="three-d-list" class="three-d-grid"></div>
+        </div>
+      </section>
+
+      <section id="models-section" class="models-section section-space wrap" hidden aria-labelledby="models-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Producción digital</p>
+            <h2 id="models-title">Exploraciones en 3D.</h2>
+          </div>
+        </div>
+        <div id="models-list" class="model-grid"></div>
+      </section>
+
+      <section id="contact-section" class="contact-section section-space" hidden aria-labelledby="contact-title">
+        <div class="wrap contact-layout">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2 id="contact-title">Conversemos.</h2>
+          </div>
+          <div id="contact-links" class="contact-links"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>Fernando Pérez</p>
+      <p>Gestión de proyectos y operaciones creativas</p>
+      <a href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
+    </footer>
+
+    <dialog id="project-dialog" aria-labelledby="detail-title">
+      <div class="dialog-toolbar">
+        <span id="dialog-kind" class="eyebrow">Proyecto seleccionado</span>
+        <button id="close-dialog" type="button" class="dialog-close" aria-label="Cerrar detalle del proyecto">Cerrar <span aria-hidden="true">×</span></button>
+      </div>
+      <div id="project-detail" class="project-detail"></div>
+    </dialog>
+
+    <dialog id="artwork-dialog" aria-labelledby="artwork-title">
+      <div class="dialog-toolbar artwork-toolbar">
+        <span id="artwork-dialog-label" class="eyebrow">Selección 3D</span>
+        <div class="artwork-toolbar-actions">
+          <button id="artwork-zoom" type="button" class="artwork-zoom" aria-pressed="false">Acercar imagen <span aria-hidden="true">＋</span></button>
+          <button id="close-artwork" type="button" class="dialog-close" aria-label="Cerrar imagen ampliada">Cerrar <span aria-hidden="true">×</span></button>
+        </div>
+      </div>
+      <div class="artwork-view">
+        <div id="artwork-image-frame" class="artwork-image-frame"><img id="artwork-image" alt="" /></div>
+        <div class="artwork-navigation" role="group" aria-label="Cambiar obra">
+          <button id="artwork-prev" type="button" aria-label="Obra anterior"><span aria-hidden="true">←</span><span>Anterior</span></button>
+          <button id="artwork-next" type="button" aria-label="Obra siguiente"><span>Siguiente</span><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+      <div class="artwork-information">
+        <h2 id="artwork-title"></h2>
+        <p id="artwork-description"></p>
+        <p id="artwork-credit" class="artwork-credit"></p>
+        <div id="artwork-links" class="three-d-links"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
