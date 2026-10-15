@@ -1371,6 +1371,8 @@ main > .is-section-current::before { opacity: 1; }
 .detail-media-artwork--campaign {
   display: grid;
   place-items: center;
+  width: 100%;
+  min-width: 0;
   min-height: 280px;
   aspect-ratio: 16 / 10;
   padding: clamp(24px, 5vw, 54px);
