@@ -1436,7 +1436,8 @@ h1, h2, h3, .hero-name { font-family: "Space Grotesk", "Segoe UI", Arial, sans-s
 @keyframes signature-flow { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
 .is-art-idle .signature-form, .is-art-idle .signature-current { animation-play-state: paused; }
 .hero-layout { position: relative; z-index: 2; display: block; }
-.hero-copy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 8px 100px; padding: 0; }
+.hero-copy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 8px 100px; padding: 0; isolation: isolate; }
+.hero-copy::before { content: ""; position: absolute; z-index: -1; left: 52%; right: -5%; top: -35px; bottom: -40px; pointer-events: none; background: radial-gradient(ellipse, #080a13f2 15%, #080a13d4 52%, transparent 74%); }
 .hero-role { grid-column: 1; grid-row: 1; max-width: 360px; margin: 0 0 8px; color: #979fc0; font-size: 10px; line-height: 1.7; letter-spacing: .08em; }
 .hero-statement { grid-column: 1; grid-row: 2 / span 2; max-width: none; margin: 0; font-size: clamp(30px, 3.2vw, 46px); line-height: 1.08; letter-spacing: -.055em; font-weight: 400; }
 .hero-statement > span { color: #dad8f5; }
@@ -1484,7 +1485,8 @@ main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter
 #project-list.is-list .project-card .cover-secondary { width: auto; max-width: 88%; max-height: 38px; }
 #project-list.is-list .project-card--1 .cover-primary { max-height: 72px; }
 #project-list.is-list .project-card--planet-fitness .cover-lockup { width: 100%; padding: 0; }
-#project-list.is-list .project-card--planet-fitness .cover-primary { width: 100%; height: 100%; max-height: none; object-fit: cover; }
+#project-list.is-list .project-card--planet-fitness .cover-primary { width: 100%; height: 100%; max-height: none; object-fit: contain; }
+#project-list.is-list .project-card--planet-fitness .project-visual { background-color: #211337; }
 #project-list.is-list .visual-caption, #project-list.is-list .exploration-frame { display: none; }
 #project-list.is-list .project-visual-open::after { display: none; }
 #project-list:not(.is-list) .project-title { font-family: "Space Grotesk", sans-serif; font-weight: 400; letter-spacing: -.05em; }
@@ -1544,6 +1546,7 @@ main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter
   .hero-name > span + span { padding-left: .35em; }
   .hero-sculpture { width: 390px; height: 390px; top: -16px; right: -155px; opacity: .68; }
   .hero-copy { display: block; }
+  .hero-copy::before { display: none; }
   .hero-role { max-width: 260px; margin-bottom: 14px; font-size: 9px; }
   .hero-statement { max-width: 400px; margin-bottom: 20px; font-size: clamp(31px, 8.5vw, 43px); }
   .hero-intro { max-width: 43ch; font-size: 14px; line-height: 1.85; }
@@ -1561,12 +1564,12 @@ main > .section-space::before { width: 36%; height: 1px; left: var(--full-gutter
   #project-list.is-list .project-card { grid-template-columns: 104px minmax(0, 1fr) 44px; grid-template-rows: auto auto auto; gap: 6px 14px; padding-block: 19px; }
   #project-list.is-list .project-card > .project-visual { grid-column: 1; grid-row: 1 / span 3; width: 104px; height: 136px; min-height: 0; }
   #project-list.is-list .project-index { grid-column: 3; grid-row: 1; justify-self: end; align-self: start; margin: 0; color: #8a79a7; font-size: 15px; }
-  #project-list.is-list .project-meta { grid-column: 2; grid-row: 1; font-size: 8px; align-self: center; }
+  #project-list.is-list .project-meta { grid-column: 2; grid-row: 1; font-size: 10px; align-self: center; }
   #project-list.is-list .project-title { grid-column: 2; grid-row: 2; font-size: clamp(18px, 5.4vw, 24px); line-height: 1.12; }
   #project-list.is-list .project-category { display: none; }
   #project-list.is-list .public-participation { grid-column: 2; grid-row: 3; gap: 2px; align-self: start; }
   #project-list.is-list .public-participation strong { font-size: 24px; }
-  #project-list.is-list .public-participation > span { font-size: 8px; line-height: 1.5; }
+  #project-list.is-list .public-participation > span { font-size: 10px; line-height: 1.5; }
   #project-list.is-list .project-open { grid-column: 3; grid-row: 3; align-self: end; }
   #project-list.is-list .project-card .cover-lockup { width: 95%; padding: 10px 4px; gap: 8px; }
   #project-list.is-list .project-card .cover-primary { max-height: 91px; }
