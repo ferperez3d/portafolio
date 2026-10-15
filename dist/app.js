@@ -145,7 +145,9 @@ function renderProjects() {
     const frame = el('span', 'exploration-frame');
     frame.setAttribute('aria-hidden', 'true');
     visual.append(frame);
-    const meta = el('div', 'project-meta', `${String(index + 1).padStart(2, '0')} / ${project.period}`);
+    const number = el('span', 'project-index', String(index + 1).padStart(2, '0'));
+    number.setAttribute('aria-hidden', 'true');
+    const meta = el('div', 'project-meta', project.period);
     const category = el('p', 'project-category', project.role);
     const title = el('h3', 'project-title', project.title);
     const summary = el('p', 'project-summary', project.summary);
@@ -154,7 +156,7 @@ function renderProjects() {
     button.setAttribute('aria-label', `Explorar caso: ${project.title}`);
     button.append(el('span', 'project-arrow', '↗'));
     button.addEventListener('click', () => openProject(project, button));
-    card.append(visual, meta, category, title, summary);
+    card.append(visual, number, meta, category, title, summary);
     const participation = publicResult(project);
     if (participation) card.append(participation);
     card.append(button);
@@ -330,7 +332,14 @@ window.addEventListener('hashchange', () => {
 
 function renderProfile(content) {
   const profile = content.profile;
-  byId('profile-name').textContent = profile.name;
+  const name = byId('profile-name');
+  const [firstName, ...surname] = profile.name.split(/\s+/);
+  const lastName = el('span', null, surname.join(' '));
+  const period = el('span', 'name-period', '.');
+  period.setAttribute('aria-hidden', 'true');
+  lastName.append(period);
+  name.replaceChildren(el('span', null, firstName), lastName);
+  name.setAttribute('aria-label', profile.name);
   byId('profile-headline').textContent = profile.headline;
   if (Array.isArray(profile.heroTitle) && profile.heroTitle.length === 2) {
     byId('hero-title').replaceChildren(document.createTextNode(profile.heroTitle[0]), el('br'), el('span', null, profile.heroTitle[1]));
@@ -603,30 +612,50 @@ function setupAtmosphere() {
   let lightFrame = null;
   let lightX = 0;
   let lightY = 0;
-  const resetLight = () => {
-    if (lightFrame) cancelAnimationFrame(lightFrame);
+  let inView = true;
+  const updateField = () => {
     lightFrame = null;
-    hero.style.setProperty('--light-x', '0px');
-    hero.style.setProperty('--light-y', '0px');
+    const bounds = hero.getBoundingClientRect();
+    const progress = preference.matches ? 0 : Math.max(0, Math.min(1, -bounds.top / bounds.height));
+    hero.style.setProperty('--light-x', lightX + 'px');
+    hero.style.setProperty('--light-y', lightY + 'px');
+    hero.style.setProperty('--tilt-x', (-lightY / 2) + 'deg');
+    hero.style.setProperty('--tilt-y', (lightX / 3) + 'deg');
+    hero.style.setProperty('--hero-shift', (progress * 38) + 'px');
+    hero.style.setProperty('--hero-progress', String(progress));
+  };
+  const scheduleField = () => {
+    if (!lightFrame) lightFrame = requestAnimationFrame(updateField);
+  };
+  const syncActivity = () => {
+    hero.classList.toggle('is-art-idle', document.hidden || !inView || preference.matches);
+  };
+  const resetLight = () => {
+    lightX = 0;
+    lightY = 0;
+    scheduleField();
   };
   const applyPreference = () => {
-    const stopped = preference.matches;
-    document.documentElement.classList.toggle('motion-paused', stopped);
-    if (stopped) resetLight();
+    document.documentElement.classList.toggle('motion-paused', preference.matches);
+    resetLight();
+    syncActivity();
   };
   preference.addEventListener('change', applyPreference);
   hero.addEventListener('pointermove', (event) => {
     if (preference.matches || event.pointerType !== 'mouse') return;
     const bounds = hero.getBoundingClientRect();
-    lightX = Math.max(-18, Math.min(18, ((event.clientX - bounds.left) / bounds.width - 0.5) * 36));
-    lightY = Math.max(-14, Math.min(14, ((event.clientY - bounds.top) / bounds.height - 0.5) * 28));
-    if (!lightFrame) lightFrame = requestAnimationFrame(() => {
-      hero.style.setProperty('--light-x', `${lightX.toFixed(1)}px`);
-      hero.style.setProperty('--light-y', `${lightY.toFixed(1)}px`);
-      lightFrame = null;
-    });
+    lightX = Math.max(-14, Math.min(14, ((event.clientX - bounds.left) / bounds.width - .5) * 28));
+    lightY = Math.max(-10, Math.min(10, ((event.clientY - bounds.top) / bounds.height - .5) * 20));
+    scheduleField();
   }, {passive: true});
   hero.addEventListener('pointerleave', resetLight);
+  window.addEventListener('scroll', () => { if (inView) scheduleField(); }, {passive: true});
+  document.addEventListener('visibilitychange', syncActivity);
+  if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => {
+    inView = entry.isIntersecting;
+    syncActivity();
+    if (inView) scheduleField();
+  }).observe(hero);
   applyPreference();
 }
 
